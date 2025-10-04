@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function asyncOperation(callback){
+        //     setTimeout(()=>{
+        //         console.log("Operation 1 completed");
+        //         callback();
+        //     },2000);
+        // }      
+        // function asyncOperation2(callback){
+        //     setTimeout(()=>{
+        //         console.log("Operation 1 completed");
+        //         callback();
+        //     },2000);
+        // }  
+
+        let myPromise=new Promise((resolve,reject)=>{
+            let success=true;
+            setTimeout(()=>{
+                if(success){
+                    resolve("The operation was successfull");
+                }
+                else{
+                    reject("The operation failed");
+                }
+            },2000);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

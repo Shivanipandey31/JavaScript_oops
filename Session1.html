@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // <!-- creating objects with object literal -->
+    // let student={
+    //     name:'ABC',
+    //     college:'PSIT',
+    //     city:'Kanpur'
+    // };
+    // function student(name,college,city){
+    //     this.name=name;
+    //     this.college=college;
+    //     this.city=city;
+    // }
+    //New keyword to create an object
+    // let s1=new student('ABC','PSIT','Kanpur');
+
+    //property accessors
+    // document.write(s1.name+ " ");
+    // document.write(s1.college+ " ");
+    // document.write(s1.city+ " ");
+    //Adding property to the object student
+    // student.branch='CSE';
+    //OBJECT CREATION USING CONSTRUCTOR
+        const student={
+            isStudying:false,
+            printIntroduction:function(){
+                document.write(`My name is ${this.name}.Am I studying ?:${this.isStudying}`);
+            }
+
+        };
+        //creating object using object create method
+        const s1=Object.create(student);
+        s1.name='ABC';
+        s1.isStudying=true;
+        s1.printIntroduction();
+        </script>
+
+<body>
+    
+</body>
+</html>

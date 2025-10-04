@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // class Person{
+        //     constructor(name, grade)
+        // }
+       // 1.Create a class called Student that inherits from person. ADD a property called grade and a method study that prints a message indicating student is studying
+       class Person{
+        constructor(name,grade){
+            this.name=name;
+            this.grade=grade;
+        }
+        study(){
+            console.log(this.name+" is studying");
+        }
+       }
+       class Student extends Person{
+        constructor(name,grade,subject){
+            super(name,grade);
+        }
+       }
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

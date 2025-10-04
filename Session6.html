@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //creating an object
+        //adding properties
+        // let person={};
+        // person.name="Alice";
+        // person.age=25;
+//         person.isStudent=true;
+
+
+//         person["city"]="Delhi";
+//         person["country"]="India";
+
+// //using dot notation
+//         console.log(person.name);
+//         console.log(person.age);
+//         console.log(person.isStudent);
+
+
+//modifying properties of the object
+        // person.name="Bob";
+        // console.log(person.name);
+
+        // //reassigning the variabe to a new object
+        // person={
+        //     name:"Charlie",
+        //     age:30
+        // };
+        // console.log(person.name);
+        // console.log(person.age);
+
+        // const person={
+        //     name:"Alice",
+        //     age:25
+        // };
+
+        // person.name="Bob";
+        // console.log(person.name);
+
+        // try{
+        //     person={
+        //         name: "Charlie",
+        //         age:30
+        //     };
+        // }
+        // catch(e){
+        //     console.log(e.message);
+        // }
+            // let person={
+            //     name:"Eve",
+            //     age: 29,
+            //     isStudent: false
+            // };
+
+            // delete person.age;
+
+            // let obj1={
+            //     propFirst: "Name"
+            // }
+
+            // document.write("First Object value" +obj1.propFirst);
+            // let obj2=Object.create(obj1);
+
+            // document.write("Inherited object value" +obj2.propFirst);
+            // (delete obj2.propFirst);
+            // document.write("Object property still exist" +obj2.propFirst);
+
+            let employee={
+                name: "Alice",
+                age:30
+            };
+            Object.defineProperty(employee,'salary',{
+                value: 50000,
+                enumerable:false
+            });
+            console.log(employee.salary);
+
+            for(let key in employee){
+                console.log (key.value);
+            }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
